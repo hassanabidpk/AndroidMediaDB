@@ -1,6 +1,8 @@
 Android Media Database Example (Original DisplayingBitmaps Sample ([1])
 ===================================
 
+Curent Version 1.0 Beta
+-----------------------
 Sample demonstrating how to load large bitmaps from Android sd card (Gallery) efficiently off the main UI thread,
 caching bitmaps (both in memory and on disk), managing bitmap memory and displaying
 bitmaps in UI element - GridView.
