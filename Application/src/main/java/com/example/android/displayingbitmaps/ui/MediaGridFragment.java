@@ -75,9 +75,9 @@ public class MediaGridFragment extends Fragment {
 
     private Integer[] folderBucketIds;
 
-//    private FolderAdapter folderAdapter;
+    private FolderAdapter folderAdapter;
 
-//    private ImagesInFolderAdapter imagesAdapter;
+    private ImagesInFolderAdapter imagesAdapter;
 
     public MediaGridFragment() {
         // Required empty public constructor
@@ -108,10 +108,10 @@ public class MediaGridFragment extends Fragment {
 
         mContentResolver = getActivity().getContentResolver();
 
-//        getRootFolders();
-//        folderAdapter = new FolderAdapter(getActivity(),getActivity().getContentResolver(),1,1,1);
-//
-//        gridView.setAdapter(folderAdapter);
+        getRootFolders();
+        folderAdapter = new FolderAdapter(getActivity(),getActivity().getContentResolver(),1,1,1);
+
+        gridView.setAdapter(folderAdapter);
 
         gridView.setOnItemClickListener(new GridViewListener());
         return v;
@@ -124,10 +124,10 @@ public class MediaGridFragment extends Fragment {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 
-//            getMediaInFolder(position);
-//
-//            imagesAdapter = new ImagesInFolderAdapter(getActivity(),getActivity().getContentResolver(), imgCount,vidCount, thumbnailIds, arrPath);
-//            gridView.setAdapter(imagesAdapter);
+            getMediaInFolder(position);
+
+            imagesAdapter = new ImagesInFolderAdapter(getActivity(),getActivity().getContentResolver(), imgCount,vidCount, thumbnailIds, arrPath);
+            gridView.setAdapter(imagesAdapter);
             gridView.setOnItemClickListener(null);
 
         }
@@ -149,11 +149,11 @@ public class MediaGridFragment extends Fragment {
                         Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.home:
-//                getRootFolders();
-//                folderAdapter = new FolderAdapter(getActivity(),getActivity().getContentResolver(),1,1,1);
-//
-//                gridView.setAdapter(folderAdapter);
-//                gridView.setOnItemClickListener(new GridViewListener());
+                getRootFolders();
+                folderAdapter = new FolderAdapter(getActivity(),getActivity().getContentResolver(),1,1,1);
+
+                gridView.setAdapter(folderAdapter);
+                gridView.setOnItemClickListener(new GridViewListener());
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -161,7 +161,7 @@ public class MediaGridFragment extends Fragment {
 
     //TODO   :  Start from here
 
-  /*  private void getRootFolders() {
+    private void getRootFolders() {
 
 
         Log.d(LOG_TAG, "getRootFolders is called");
@@ -178,13 +178,13 @@ public class MediaGridFragment extends Fragment {
                 MediaStore.Video.VideoColumns.BUCKET_DISPLAY_NAME};
 
 
-        *//*
+        /*
         * uri :  The URI, using the content:// scheme
         * projection :  a list of which columns to return, Passing null will return all columns, which is inefficient
         * selection:  Filter declaring which rows to return, formateed as an SQL WHERE clause
         * selectionArgs:  You may include ?s in selection, which will be replaced by values from selectionArgs, in the order that they appear in the selection,
         * sortOrder: How to order the rows, formatted as an SQL ORDER BY clause
-        * *//*
+        * */
 
         Cursor imgCsr = mContentResolver.query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, IMAGE_PROJECTION,
                 null,null,MediaStore.Images.ImageColumns.DATE_ADDED);
@@ -259,20 +259,18 @@ public class MediaGridFragment extends Fragment {
 
 
     }
-*/
+
 
     //TODO   :  Step 2
 
-  /*  private void getMediaInFolder(int bucketFolderId) {
+    private void getMediaInFolder(int bucketFolderId) {
 
 
         final String[] IMAGE_PROJECTION = { MediaStore.Images.Media.DATA,
                 MediaStore.Images.Media._ID,
                 MediaStore.Images.Media.DISPLAY_NAME,
-				*//*
-				 * MediaStore.Images.Media.HEIGHT,
-				 * MediaStore.Images.Media.WIDTH,
-				 *//*MediaStore.Images.Media.SIZE };
+                MediaStore.Images.Media.SIZE };
+
         final String[] VIDEO_PROJECTION = { MediaStore.Video.Media.DATA,
                 MediaStore.Video.Media._ID,
                 MediaStore.Video.Media.DISPLAY_NAME,
@@ -366,11 +364,11 @@ public class MediaGridFragment extends Fragment {
             videocursor.close();
 
 
-    }*/
+    }
 
     //TODO   :  Step 3
 
-   /* public class FolderAdapter extends BaseAdapter {
+    public class FolderAdapter extends BaseAdapter {
 
         private static final String LOG = "FolderAdapter";
         private Context mContext;
@@ -439,11 +437,11 @@ public class MediaGridFragment extends Fragment {
             return view;
         }
     }
-*/
+
 
     //TODO   :  Step 4
 
-/*
+
     public class ImagesInFolderAdapter extends  BaseAdapter {
 
         private Context mContext;
@@ -522,9 +520,6 @@ public class MediaGridFragment extends Fragment {
             return v;
         }
     }
-
-*/
-
 
     private int dipToPx( int sp ) {
 

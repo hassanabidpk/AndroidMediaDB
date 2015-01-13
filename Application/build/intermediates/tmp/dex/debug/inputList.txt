@@ -1,6 +1,0 @@
-/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/build/intermediates/classes/debug
-/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-c6483d88ce599373ab9b3010a815b632a26d2694.jar
-/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/build/intermediates/pre-dexed/debug/classes-49231b01ba736525c12eb5d415e0e1f24fe73948.jar
-/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/build/intermediates/pre-dexed/debug/classes-8ad2b8a6f94ac8b2330b1be6c63e8c580c418cef.jar
-/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-f5e991b04e834268e5b062bd4816f249b3246f41.jar
-/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/build/intermediates/pre-dexed/debug/classes-f91d0b6e8fdcfe23abab1621db20e6ed19aee9d0.jar
