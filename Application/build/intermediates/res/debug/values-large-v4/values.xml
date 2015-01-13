@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/src/main/res/values-large/dimens.xml -->
+    <eat-comment/>
+    <dimen name="image_thumbnail_size">148dp</dimen>
+    <dimen name="image_thumbnail_spacing">2dp</dimen>
+</resources>

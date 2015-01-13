@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/src/main/res/values-v11/styles.xml -->
+    <eat-comment/>
+    <style name="AppThemeDark" parent="@android:style/Theme.Holo">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:actionBarStyle">@style/TranslucentDarkActionBar</item>
+    </style>
+    <style name="AppThemeDark.FullScreen"/>
+    <!-- From: file:/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/src/main/res/values-v11/template-styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Base" parent="android:Theme.Holo.Light"/>
+    <!-- From: file:/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/src/main/res/values-v11/styles.xml -->
+    <eat-comment/>
+    <style name="TranslucentDarkActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#99000000</item>
+    </style>
+</resources>

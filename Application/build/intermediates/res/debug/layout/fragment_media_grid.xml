@@ -1,0 +1,26 @@
+<GridView xmlns:a="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+    a:id="@+id/gridview"
+    a:layout_marginTop="80dp"
+    a:layout_width="wrap_content"
+    a:layout_height="match_parent"
+    a:layout_alignParentLeft="true"
+    a:layout_alignParentRight="true"
+    a:paddingTop="10dp"
+    a:columnWidth="100dp"
+    a:fastScrollEnabled="true"
+    a:gravity="center"
+    a:horizontalSpacing="5dp"
+    a:listSelector="@android:color/transparent"
+    a:numColumns="auto_fit"
+    a:scrollbarStyle="insideOverlay"
+    a:scrollbars="vertical"
+    a:stretchMode="columnWidth"
+    a:verticalSpacing="5dp"
+    style="@style/PhotoGridLayout"
+    >
+
+
+</GridView>
+<!-- From: file:/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/src/main/res/layout/fragment_media_grid.xml -->

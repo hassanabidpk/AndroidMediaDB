@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+    <FrameLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/folderimageholder"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="64.5dp"
+            android:id="@+id/folderimage"
+            android:scaleType="centerCrop"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/foldertxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="-1dp"
+        android:singleLine="true"
+        android:ellipsize="middle"
+
+        />
+</LinearLayout><!-- From: file:/Users/csd/AndroidStudioProjects/DisplayingBitmaps/Application/src/main/res/layout/folder_view.xml -->
