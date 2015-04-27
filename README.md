@@ -38,7 +38,7 @@ Getting Started
 This sample uses the Gradle build system. To build this project, use the
 "gradlew build" command or use "Import Project" in Android Studio.
 
-Support for DislpayingBitmaps
+Support for DisplayingBitmaps
 -----------------------------
 
 - Google+ Community: https://plus.google.com/communities/105153134372062985968
